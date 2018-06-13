@@ -1,0 +1,100 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+
+body {
+	background: #3E4649;
+	color: #f7f7f7;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+h1,
+h2 {
+	font-weight: bold;
+}
+p {
+	font-size: 16px;
+	color: #cdcdcd;
+}
+
+.jumbotron {
+	color:  	black;
+	text-align: center;
+	margin-top: 50px;
+	background-image:url('hill.jpg');
+	background-size: 100% 100%; 
+	
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+}
+
+
+.navbar-inverse {
+	background: #2E2F31;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: grey;
+}
+
+.dropdown-menu {
+	background: #2E2F31;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: #2C463C;
+}
+
+.glyphicon-large {
+	font-size: 100px;
+	
+}
+
+.runningblog {
+	margin-top: 50px;
+}
+
+.row {
+	text-align: left;
+	padding-top: 50px;
+}
+
+.top-buffer { 
+	margin-top:20px; 
+	}
+	
+.footer {
+	position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2E2F31;
+    color: white;
+    text-align: center;
+	height: 35px;
+	line-height: 35px;
+	
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: lightgray;
+}
+
+.text-hover tbody tr:hover td, .text-hover tbody tr:hover th {
+  color: black;
+}
