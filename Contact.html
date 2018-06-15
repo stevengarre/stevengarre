@@ -51,34 +51,8 @@
 
 <div class="row top-buffer">
 
-<div class="container" style="max-width: 400px;">
-
-<p>       <3        <3 </p>
-
-<canvas id="myChart" width="400" height="400"></canvas>
-<script>
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ["2013", "2014", "2015", "2016", "2017", "2018"],
-        datasets: [{
-            label: 'aantal lopers Stadsloop Gent',
-            data: [1306, 1550, 1557, 1319, 1084, 688]
-				],
-            borderWidth: 1
-        }]
-    }
-	
-
-});
-</script>
-</div>
 
 <div class="container" style="max-width: 600px;">
-
-<p>       <3        <3 </p>
-
 <canvas id="linechart" width="800" height="800"></canvas>
 <script>
 new Chart(document.getElementById("linechart"), {
@@ -126,14 +100,16 @@ new Chart(document.getElementById("linechart"), {
     title: {
       display: true,
       text: 'Stadsloop Gent 5K',
-	  
+	  fontSize: 30,
+	  fontColor: "white",
+	  fontFamily: 'Raleway',
     }
   }
 });
 </script>
-
 </div>
 
+
 <br>
 <br>
 <br>
@@ -155,6 +131,27 @@ new Chart(document.getElementById("linechart"), {
 <br>
 <br>
 <br>
+<div class="container" style="max-width: 400px;">
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["2013", "2014", "2015", "2016", "2017", "2018"],
+        datasets: [{
+            label: 'aantal lopers Stadsloop Gent',
+            data: [1306, 1550, 1557, 1319, 1084, 688]
+				],
+            borderWidth: 1,
+				}]
+		}
+	
+
+});
+</script>
+</div>
+
 
 
 <div class="footer">
