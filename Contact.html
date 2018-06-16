@@ -71,6 +71,7 @@ new Chart(document.getElementById("linechart"), {
 		pointRadius: 3,
 		pointHoverBackgroundColor: "#660000",
 		hoverborderwidth: 15,
+		
 		data: [0, 0, 0, 489, 953, 1060, 1121, 1431, 1306,1550,1557,1319,1084,688],
       }, {   
         label: "10k",
@@ -108,7 +109,7 @@ new Chart(document.getElementById("linechart"), {
   options: {
     title: {
       display: true,
-      text: 'Aantal deelnemers Stadsloop Gent',
+      text: 'Deelnemers Stadsloop Gent',
 	  fontSize: 20,
 	  fontColor: "white",
 	  fontFamily: "'Raleway','sans-serif'",
@@ -116,14 +117,14 @@ new Chart(document.getElementById("linechart"), {
 	legend: {
 		display: true,
 		position: 'right',
+		boxWidth: 4,
 		labels: {
 			fontFamily: "'Raleway','sans-serif'",
 			fontColor: 'white',
-			boxWidth: 20,
-			
+			boxWidth: 30,
+			fontSize: 18,
 			}
-			
-	},
+			},
   }
 });
 </script>
