@@ -49,19 +49,39 @@
 		</div>
 	</div>
 </nav>
+<div class="row top-buffer">
+
+<div class="container" style="max-width: 970px;">
+  <div class="row">
+		<div class="col-sm-6" align="left">
+			<p>kolom 6</p>
+			<canvas id="linechart" width="800" height="600"></canvas>
+			<script src="js/stadslloop.js"></script>
+		</div>
+		<div class="col-sm-6">
+			<p>kolom 6</p>
+			<canvas id="linechart2" width="800" height="600"></canvas>
+			<script src="js/stadslloop.js"></script>
+		</div>
+		<div class="col-md-6">
+			<p>kolom 6.2</p>
+			<canvas id="linechart3" width="800" height="600"></canvas>
+			<script src="js/stadslloop.js"></script>
+		</div>
+  </div>
+</div>
+
+
+
+
+
 
 <div class="row top-buffer">
 <div class= "container">
 hello
 </div>
+<div class="container" style="max-width: 600px;">
 
-<div class="container" style="max-width: 600px;">
-<canvas id="linechart" width="800" height="600"></canvas>
-<script src="https://cdn.rawgit.com/stevengarre/stevengarre/master/js/Stadslloop.js"></script>
-</div>
-<div class="container" style="max-width: 600px;">
-<canvas id="linechart2" width="800" height="600"></canvas>
-<script src="https://cdn.rawgit.com/stevengarre/stevengarre/master/js/Stadslloop.js"></script>
 </div>
 
 
@@ -87,8 +107,7 @@ hello
 <br>
 <br>
 <div class="container" style="max-width: 400px;">
-<canvas id="myChart" width="400" height="400"></canvas>
-<script>
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',

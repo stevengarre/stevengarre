@@ -74,8 +74,7 @@ new Chart(document.getElementById("linechart"), {
   }
 });
 
-
-let linechart2 = new Chart(document.getElementById("linechart2"), {
+new Chart(document.getElementById("linechart2"), {
   type: 'line',
   data: {
     labels: [ 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
@@ -118,3 +117,45 @@ let linechart2 = new Chart(document.getElementById("linechart2"), {
   }
 });
 
+new Chart(document.getElementById("linechart3"), {
+  type: 'line',
+  data: {
+    labels: [ 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+    datasets: [{ 
+    
+        label: "5K",
+        borderColor: "#660000",
+        fill: false,
+		borderWidth: 1.5,
+		lineTension: 0.3,
+		hoverradius: 15,
+		pointHitRadius: 8,
+		pointRadius: 3,
+		pointHoverBackgroundColor: "#660000",
+		hoverborderwidth: 15,
+		
+		data: [17.332, 18.723, 18.814, 18.569, 18.479, 17.927, 17.974, 18.272],
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Gem.snelheid top10',
+	  fontSize: 20,
+	  fontColor: "white",
+	  fontFamily: "'Raleway','sans-serif'",
+    },
+	legend: {
+		display: true,
+		position: 'right',
+		boxWidth: 4,
+		labels: {
+			fontFamily: "'Raleway','sans-serif'",
+			fontColor: 'white',
+			boxWidth: 30,
+			fontSize: 18,
+			}
+			},
+  }
+});
