@@ -25,6 +25,25 @@
   
   
   <body>
+	  <h1 id="bigOne"></h1>	  
+	  
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAutrTbr1IdsRe6msspOuKCqF5MR4XISew",
+    authDomain: "running2.firebaseapp.com",
+    databaseURL: "https://running2.firebaseio.com",
+    projectId: "running2",
+    storageBucket: "running2.appspot.com",
+    messagingSenderId: "374099297109"
+  };
+  firebase.initializeApp(config);
+</script>
+	 
+	var bigOne = document.getElementById('bigOne');
+	  var dbref = firebase.database().ref().child('text');
+	  dbRef.on('value'. snap => bigOne.innerText = snap.val()));
 
   <nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
